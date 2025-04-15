@@ -1,0 +1,77 @@
+# AI Agency Website – Development Rules & Best Practices
+
+## 1. General Principles
+- Prioritize clean, readable, and maintainable code.
+- Follow modern web development standards (ESLint, Prettier, etc.).
+- Use TypeScript for type safety and clarity.
+- Keep dependencies minimal and up-to-date.
+- Every component, function, and module should have a clear, single responsibility.
+- Always follow the user's requirements carefully and to the letter.
+- If unsure or there is no correct answer, state so clearly—never guess.
+
+## 2. Development Process & Implementation Guidelines
+- Before coding, think step-by-step and describe your plan.
+- Confirm the plan before starting implementation.
+- Always write correct, best-practice, DRY (Don't Repeat Yourself), bug-free, fully functional, and complete code.
+- Leave NO todos, placeholders, or missing pieces—ensure code is finalized and verified.
+- Focus on readable and easy-to-understand WITH being performant.
+- Include all required imports and use proper naming for key components.
+- Be concise; minimize unnecessary prose.
+- Use early returns for clarity and to reduce nesting.
+- Use descriptive variable and function/const names. Event handlers should use the "handle" prefix (e.g., handleClick).
+- Use consts for functions.
+
+## 3. Project Structure
+- Organize code by feature or domain (e.g., /components, /pages, /blog, /lib).
+- Use clear, descriptive names for files, folders, and variables.
+- Keep components small and reusable.
+
+## 4. UI & Styling
+- Use shadcn/ui components by default; customize only when necessary.
+- Use Tailwind classes for styling HTML elements and avoid custom CSS where possible.
+- Stick to the black & white, minimalist theme as described in PRD.md.
+- Ensure responsive design for all breakpoints (mobile, tablet, desktop).
+- Avoid inline styles; use utility classes or component props.
+
+## 5. Accessibility
+- All interactive elements must be accessible by keyboard.
+- Use semantic HTML elements (e.g., <header>, <main>, <footer>, <section>, <button>, <nav>).
+- Add alt text for all images.
+- Ensure sufficient color contrast.
+- Implement accessibility features on elements.
+
+## 6. SEO & Performance
+- Use proper meta tags (title, description, OG tags) per page.
+- Optimize images for web (size, format).
+- Lazy-load non-critical resources.
+- Minimize JavaScript and CSS bundle sizes.
+
+## 7. Blog
+- Store blog posts as markdown files.
+- Use frontmatter for metadata (title, date, description, etc.).
+- Render markdown securely (avoid XSS).
+
+## 8. Forms & Validation
+- Validate all required fields on the client side.
+- Sanitize and validate data on the server/API side as well.
+- Provide user feedback for errors and successful submissions.
+
+## 9. Code Review & Testing
+- All code should be self-reviewed before commit.
+- Test UI on multiple devices and browsers.
+- Use Lighthouse or similar tools to check performance and accessibility.
+
+## 10. Git & Collaboration
+- Write clear, concise commit messages.
+- Use feature branches for new features or fixes.
+- Keep PRs small and focused.
+
+## 11. Security
+- Never commit secrets or API keys.
+- Sanitize all user input.
+- Keep dependencies updated to avoid vulnerabilities.
+
+---
+
+**Follow these rules for every change and addition to the project.**
+If you have to break a rule, document why in the PR or commit message.
